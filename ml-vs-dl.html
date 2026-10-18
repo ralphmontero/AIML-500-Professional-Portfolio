@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Machine Learning or Deep Learning? | Ralph Montero</title>
+  <meta name="description" content="Artifact 02: A research paper on machine learning vs. deep learning, turned into a one-page decision guide for coaches and sports businesses.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="brand-mark">RM</span>Ralph Montero</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+    <nav class="nav">
+      <a href="index.html#value">Value</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="index.html#artifacts" aria-current="page">Artifacts</a>
+      <a class="nav-cta" href="https://www.linkedin.com/in/ralph-montero-095a15254/" target="_blank" rel="noopener">LinkedIn</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero page-hero">
+    <div class="wrap">
+      <a class="crumb" href="index.html#artifacts">&larr; All artifacts</a><br>
+      <span class="eyebrow">Artifact 02 &middot; Research &amp; decision guide</span>
+      <h1>Machine Learning or Deep Learning? A Decision Guide for Sports Businesses</h1>
+      <dl class="meta">
+        <div><dt>Course</dt><dd>AIML-500 &middot; Workshop 2</dd></div>
+        <div><dt>Completed</dt><dd>October 2026</dd></div>
+        <div><dt>Type</dt><dd>Research paper + quick-reference guide</dd></div>
+        <div><dt>Sources</dt><dd>5 (peer-reviewed + industry)</dd></div>
+      </dl>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="ML-vs-DL-Decision-Guide.pdf" download>Download the 1-page guide &rarr;</a>
+        <a class="btn btn-ghost" href="#paper">Read the full paper</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="stats">
+      <div class="stat"><b>2</b><span>real-world systems compared: telecom churn and Face ID</span></div>
+      <div class="stat"><b>97%</b><span>SVM accuracy predicting churn on 7,043 customers</span></div>
+      <div class="stat"><b>45</b><span>datasets where classic models beat deep learning on tables</span></div>
+      <div class="stat"><b>4</b><span>questions to pick the right approach</span></div>
+    </div>
+
+    <div class="doc-layout">
+      <aside class="toc">
+        <p>On this page</p>
+        <ol>
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#description">Description</a></li>
+          <li><a href="#objective">Objective</a></li>
+          <li><a href="#guide">The decision guide</a></li>
+          <li><a href="#sports">Sports applications</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#findings">Key findings</a></li>
+          <li><a href="#paper">Full paper</a></li>
+          <li><a href="#tools">Tools</a></li>
+          <li><a href="#value-proposition">Value proposition</a></li>
+          <li><a href="#references">References</a></li>
+        </ol>
+      </aside>
+
+      <article class="doc">
+
+        <section id="introduction">
+          <div class="sec-label">Introduction</div>
+          <h2>Deep learning gets the headlines. It isn't always the right tool.</h2>
+          <p>Before this assignment, I used "machine learning" and "deep learning" interchangeably. A lot of coaches and business owners do too, and it's a costly mix-up. Pick the wrong approach and you can spend more money on a model that's slower to build and impossible to explain.</p>
+          <p>Deep learning is a <em>part</em> of machine learning. Traditional machine learning learns from features people choose, like contract type or monthly cost. Deep learning uses many-layered neural networks that find the important features in raw data on their own.</p>
+        </section>
+
+        <section id="description">
+          <div class="sec-label">Description</div>
+          <h2>A research paper, turned into a tool people can use.</h2>
+          <ul>
+            <li><strong>The paper.</strong> A five-page research paper comparing two real systems: <strong>customer churn prediction</strong> with a support vector machine (SVM) and <strong>Apple's Face ID</strong> with a convolutional neural network (CNN). For each, I explain why one approach fits and why the other doesn't.</li>
+            <li><strong>The portfolio version.</strong> A paper alone isn't much help to a coach, so I turned the findings into a <strong>one-page decision guide</strong> and translated both cases into sports-business examples.</li>
+          </ul>
+        </section>
+
+        <section id="objective">
+          <div class="sec-label">Objective</div>
+          <h2>Know when to use which, and be able to explain why.</h2>
+          <p>My objective was to understand the real difference between machine learning and deep learning by testing both against real-world problems, then to give my audience a fast, plain-language way to choose the right approach for theirs.</p>
+        </section>
+
+        <section id="guide">
+          <div class="sec-label">The decision guide</div>
+          <h2>Four questions to ask before you build.</h2>
+          <div class="compare">
+            <div class="q">Question</div>
+            <div class="hd ml">Machine learning<small>e.g. SVM, decision trees</small></div>
+            <div class="hd dl">Deep learning<small>e.g. CNNs, neural networks</small></div>
+
+            <div class="q">1. What does your data look like?</div>
+            <div class="ml">Rows and columns: spreadsheets, stats, payments, attendance.</div>
+            <div class="dl">Raw images, video, audio, or text.</div>
+
+            <div class="q">2. Can you name the features that matter?</div>
+            <div class="ml">Yes. You already track them.</div>
+            <div class="dl">No. They're too subtle to describe by hand.</div>
+
+            <div class="q">3. Do you need to explain the "why"?</div>
+            <div class="ml">Yes. Simpler models show which factors drove a prediction.</div>
+            <div class="dl">Harder. Deep networks are often a "black box."</div>
+
+            <div class="q">4. How much data and computing power?</div>
+            <div class="ml">Thousands of rows. Cheap and fast to retrain.</div>
+            <div class="dl">Large datasets and heavy computing.</div>
+          </div>
+          <p class="callout">Rule of thumb: if your data fits in a spreadsheet, start with machine learning. Reach for deep learning when the data is raw and the patterns are too subtle to describe.</p>
+
+          <div class="download-card">
+            <a href="ML-vs-DL-Decision-Guide.pdf" target="_blank" rel="noopener"><img src="guide-preview.jpg" alt="Preview of the one-page decision guide"></a>
+            <div>
+              <span class="eyebrow">Free download</span>
+              <h3>Machine learning or deep learning? One-page guide</h3>
+              <p>The four questions, the rule of thumb, five sports examples, and the research behind it on one printable page. Built for coaches, club directors, and anyone being pitched an "AI solution."</p>
+              <div class="btn-row">
+                <a class="btn btn-dark" href="ML-vs-DL-Decision-Guide.pdf" download>Download PDF</a>
+                <a class="btn btn-outline" href="ML-vs-DL-Decision-Guide.pdf" target="_blank" rel="noopener">Open in new tab</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="sports">
+          <div class="sec-label">Sports applications</div>
+          <h2>What it looks like in sports.</h2>
+          <p>The paper's two cases map directly onto problems coaches and training businesses face. These are my applied examples, not tested models.</p>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Problem</th><th>Data</th><th>Fit</th><th>Why</th></tr></thead>
+              <tbody>
+                <tr><td>Which training clients won't renew their package</td><td>Sessions attended, package size, months active</td><td><span class="pill ml">ML</span></td><td>Same shape as telecom churn, and you need the reason to act on it.</td></tr>
+                <tr><td>Flagging players with high training load</td><td>Minutes, GPS load, effort ratings</td><td><span class="pill ml">ML</span></td><td>Structured numbers; coaches need to see which factor drove the flag.</td></tr>
+                <tr><td>Building a scouting shortlist from stats</td><td>Save %, distribution accuracy, minutes</td><td><span class="pill ml">ML</span></td><td>Known, meaningful columns. A simple model is fast and explainable.</td></tr>
+                <tr><td>Analyzing a goalkeeper's diving technique</td><td>Training or match video</td><td><span class="pill dl">DL</span></td><td>Body positions change every frame, the same reason Face ID needs a CNN.</td></tr>
+                <tr><td>Auto-cutting highlight clips from footage</td><td>Full match video</td><td><span class="pill dl">DL</span></td><td>The model has to "see" saves and goals in raw video.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section id="process">
+          <div class="sec-label">Process</div>
+          <h2>From lesson to resource.</h2>
+          <ol class="steps">
+            <li>
+              <h4>Learn the core difference</h4>
+              <p>The lesson compared traditional machine learning to following a checklist, and deep learning to a student who has actually learned to read.</p>
+            </li>
+            <li>
+              <h4>Pick two opposite cases</h4>
+              <p>I chose one problem with structured data (telecom churn) and one with raw data (Face ID) so the contrast would be clear.</p>
+            </li>
+            <li>
+              <h4>Research with real sources</h4>
+              <p>I used a 2025 peer-reviewed churn study, a 2022 benchmark of 45 datasets, and Apple and IBM technical documentation.</p>
+            </li>
+            <li>
+              <h4>Argue both sides</h4>
+              <p>For each case, I explained why one approach fits and why the other fails, so the reasoning works in both directions.</p>
+            </li>
+            <li>
+              <h4>Translate for my audience</h4>
+              <p>For the portfolio, I turned the findings into a four-question guide, mapped each case to sports problems, and designed a printable one-page version.</p>
+            </li>
+          </ol>
+        </section>
+
+        <section id="findings">
+          <div class="sec-label">Key findings</div>
+          <h2>What the research showed.</h2>
+          <ul>
+            <li><strong>Simple models win on structured data.</strong> On a telecom dataset of 7,043 customers, an SVM reached 97% accuracy, ahead of logistic regression and k-nearest neighbors at 89% (Omari et al., 2025). Across 45 datasets, tree-based models stayed state-of-the-art on medium-sized tables (Grinsztajn et al., 2022).</li>
+            <li><strong>Explainability matters to a business.</strong> A deep churn model like ChurnNet performed well but stayed a "black box" (Omari et al., 2025). A retention team can't act on a prediction it can't explain.</li>
+            <li><strong>Deep learning wins on raw, changing data.</strong> Face ID turns a depth map and infrared image into a mathematical representation with a neural engine. It adapts to hats, glasses, and facial hair, with less than a 1 in 1,000,000 chance a stranger unlocks the phone (Apple, 2026).</li>
+            <li><strong>Hand-picked features break on faces.</strong> Before CNNs, image recognition relied on slow, manual feature extraction (IBM, 2021). A human checklist falls apart the moment someone tilts their head.</li>
+          </ul>
+        </section>
+
+        <section id="paper">
+          <div class="sec-label">Full paper</div>
+          <h2>Machine Learning vs. Deep Learning: Picking the Right Tool for the Problem</h2>
+          <p>The complete five-page paper with APA citations, as submitted for AIML-500 Machine Learning Fundamentals.</p>
+          <div class="btn-row">
+            <a class="btn btn-dark" href="ML-vs-DL-Paper.pdf" download>Download paper (PDF)</a>
+            <a class="btn btn-outline" href="ML-vs-DL-Paper.pdf" target="_blank" rel="noopener">Open in new tab</a>
+          </div>
+          <iframe class="pdf-frame" src="ML-vs-DL-Paper.pdf#view=FitH" title="Machine Learning vs. Deep Learning paper PDF"></iframe>
+        </section>
+
+        <section id="tools">
+          <div class="sec-label">Tools and technologies used</div>
+          <h2>What I used, and why.</h2>
+          <ul class="tool-list">
+            <li><b>Academic research</b><span>Peer-reviewed journal (Frontiers in Artificial Intelligence) and an arXiv benchmark study.</span></li>
+            <li><b>Industry documentation</b><span>Apple's Face ID technical guide and IBM's explainers on CNNs and churn.</span></li>
+            <li><b>Microsoft Word</b><span>Writing and APA 7 formatting.</span></li>
+            <li><b>Claude (Anthropic)</b><span>Research support and idea generation for the paper, and help designing the guide and this page.</span></li>
+            <li><b>Model concepts</b><span>Support vector machines (SVM) and convolutional neural networks (CNN).</span></li>
+            <li><b>GitHub Pages</b><span>Publishing the guide and paper as a free, shareable resource.</span></li>
+          </ul>
+        </section>
+
+        <section id="value-proposition">
+          <div class="sec-label">Value proposition</div>
+          <h2>Why this matters.</h2>
+          <p class="callout">This artifact shows I understand the technical side of AI well enough to make it simple, and it gives coaches and sports businesses a fast way to choose the right AI approach before they spend money on it.</p>
+          <div class="value-grid">
+            <div class="card">
+              <h3>Unique value</h3>
+              <p>Most comparisons stop at definitions. I tested the ideas against two real systems, backed them with research, and translated them into decisions for sports, a world I know as a player, coach, and business owner. It shows four skills: research, technical writing, evaluating AI approaches critically, and explaining technical trade-offs to a non-technical audience.</p>
+            </div>
+            <div class="card">
+              <h3>Relevance</h3>
+              <p>Coaches, academies, and clubs are being pitched "AI" constantly. Knowing the difference helps them ask better questions and avoid paying for a complex black box when a simple, explainable model would work. For employers, it shows I can explain technical trade-offs to decision-makers.</p>
+            </div>
+          </div>
+          <p style="margin-top:20px"><strong>How it connects to my value proposition:</strong> Artifact 01 showed I can build an AI tool. This one shows I can choose the right tool and explain why. "Simple" in my promise means not using deep learning when a simpler model does the job better.</p>
+        </section>
+
+        <section id="references">
+          <div class="sec-label">References</div>
+          <h2>Sources.</h2>
+          <ul class="refs">
+            <li>Apple. (2026, September 18). <em>About Face ID advanced technology</em>. Apple Support. <a href="https://support.apple.com/en-us/102381" target="_blank" rel="noopener">https://support.apple.com/en-us/102381</a></li>
+            <li>Grinsztajn, L., Oyallon, E., &amp; Varoquaux, G. (2022). <em>Why do tree-based models still outperform deep learning on tabular data?</em> [Preprint]. arXiv. <a href="https://doi.org/10.48550/arXiv.2207.08815" target="_blank" rel="noopener">https://doi.org/10.48550/arXiv.2207.08815</a></li>
+            <li>IBM. (2021, October 6). <em>What are convolutional neural networks?</em> <a href="https://www.ibm.com/think/topics/convolutional-neural-networks" target="_blank" rel="noopener">https://www.ibm.com/think/topics/convolutional-neural-networks</a></li>
+            <li>O'Brien, K., &amp; Downie, A. (n.d.). <em>What is customer churn?</em> IBM. Retrieved October 13, 2026, from <a href="https://www.ibm.com/think/topics/customer-churn" target="_blank" rel="noopener">https://www.ibm.com/think/topics/customer-churn</a></li>
+            <li>Omari, A., Al-Omari, O., Al-Omari, T., &amp; Fati, S. M. (2025). A predictive analytics approach to improve telecom's customer retention. <em>Frontiers in Artificial Intelligence, 8</em>, Article 1600357. <a href="https://doi.org/10.3389/frai.2025.1600357" target="_blank" rel="noopener">https://doi.org/10.3389/frai.2025.1600357</a></li>
+          </ul>
+
+          <nav class="pager">
+            <a href="gk-coach-assistant.html"><span>&larr; Previous</span>Artifact 01: AI Booking Assistant</a>
+            <a href="index.html#artifacts"><span>All work</span>Back to artifacts &rarr;</a>
+          </nav>
+        </section>
+
+      </article>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>&copy; <span data-year>2026</span> Ralph Montero</span>
+    <span><a href="https://www.linkedin.com/in/ralph-montero-095a15254/" target="_blank" rel="noopener">LinkedIn</a> &middot; <a href="index.html#artifacts">All artifacts</a></span>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
