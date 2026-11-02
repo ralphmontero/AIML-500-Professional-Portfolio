@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Is Your Data Ready for AI? | Ralph Montero</title>
+  <meta name="description" content="Artifact 04: Working through real machine-learning data challenges (cleaning, bias, and privacy), turned into a data-readiness checklist for sports organizations.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="brand-mark">RM</span>Ralph Montero</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+    <nav class="nav">
+      <a href="index.html#value">Value</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="index.html#artifacts" aria-current="page">Artifacts</a>
+      <a class="nav-cta" href="https://www.linkedin.com/in/ralph-montero-095a15254/" target="_blank" rel="noopener">LinkedIn</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero page-hero">
+    <div class="wrap">
+      <a class="crumb" href="index.html#artifacts">&larr; All artifacts</a><br>
+      <span class="eyebrow">Artifact 04 &middot; Data quality &amp; responsible AI</span>
+      <h1>Garbage In, Bad Calls Out: A Data Checklist for Sports AI</h1>
+      <dl class="meta">
+        <div><dt>Course</dt><dd>AIML-500 &middot; Workshop 4</dd></div>
+        <div><dt>Completed</dt><dd>Fall 2026</dd></div>
+        <div><dt>Type</dt><dd>Scenario-based AI coaching + checklist</dd></div>
+        <div><dt>Built with</dt><dd>SchoolAI, guided AI coach</dd></div>
+      </dl>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="Sports-Data-Checklist.pdf" download>Download the checklist &rarr;</a>
+        <a class="btn btn-ghost" href="#evidence">See the exercise results</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="stats">
+      <div class="stat"><b>3</b><span>real-world data scenarios: cleaning, bias, and privacy</span></div>
+      <div class="stat"><b>800K</b><span>messy reviews in the data-cleaning case</span></div>
+      <div class="stat"><b>10&times;</b><span>scale-up in the hiring-model case</span></div>
+      <div class="stat"><b>12</b><span>checks in my sports data checklist</span></div>
+    </div>
+
+    <div class="doc-layout">
+      <aside class="toc">
+        <p>On this page</p>
+        <ol>
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#description">Description</a></li>
+          <li><a href="#objective">Objective</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#takeaways">Key takeaways</a></li>
+          <li><a href="#evidence">Evidence</a></li>
+          <li><a href="#sports">In sports</a></li>
+          <li><a href="#checklist">The checklist</a></li>
+          <li><a href="#tools">Tools</a></li>
+          <li><a href="#value-proposition">Value proposition</a></li>
+          <li><a href="#references">References</a></li>
+        </ol>
+      </aside>
+
+      <article class="doc">
+
+        <section id="introduction">
+          <div class="sec-label">Introduction</div>
+          <h2>Most AI problems start with the data, not the model.</h2>
+          <p>Sports organizations now collect more data than ever: GPS loads, match video, recruiting stats, wellness surveys. It's easy to assume more data means a better model. This exercise showed me how often the opposite is true. Duplicate records can make a model look better than it is, old decisions can teach it old biases, and sharing athlete data carelessly can put players at risk.</p>
+        </section>
+
+        <section id="description">
+          <div class="sec-label">Description</div>
+          <h2>Three scenarios with an AI coach, turned into a checklist.</h2>
+          <ul>
+            <li><strong>The exercise.</strong> A guided session with an AI coach that gave me three realistic machine-learning problems. For each, I proposed a plan, defended it against follow-up questions, and named the trade-offs and risks.</li>
+            <li><strong>The portfolio version.</strong> I translated each scenario into a sports setting and built a one-page <strong>"Is your data ready for AI?"</strong> checklist with 12 checks across three areas: clean, fair, and protected.</li>
+          </ul>
+        </section>
+
+        <section id="objective">
+          <div class="sec-label">Objective</div>
+          <h2>Learn to spot data problems before they become model problems.</h2>
+          <p>My objective was to practice approaches for cleaning and processing data, and to explain the challenges of sharing data, protecting privacy, and keeping it secure in machine-learning projects. Then I wanted to give sports organizations a simple way to check their own data before trusting an AI tool built on it.</p>
+        </section>
+
+        <section id="process">
+          <div class="sec-label">Process</div>
+          <h2>Three scenarios, and what I proposed.</h2>
+          <ol class="steps">
+            <li>
+              <h4>Data quality and cleaning <small>800K reviews</small></h4>
+              <p>A team wanted to train a sentiment model fast on messy reviews with duplicates, spam, and labels taken from star ratings. I proposed standardizing the data first, removing duplicates <em>before</em> splitting training and test data, hand-checking a sample of labels, and using several signals to catch spam without filtering out real reviewers who just write differently.</p>
+            </li>
+            <li>
+              <h4>Bias and responsible scaling <small>Hiring model</small></h4>
+              <p>A résumé-screening model trained on ten years of one company's hiring was about to launch in a new country at ten times the volume. I argued that strong results on old data only prove it works on a similar crowd, and called for accuracy checks by group, ongoing spot checks, and a pilot with real local data before launch.</p>
+            </li>
+            <li>
+              <h4>Privacy, security, and governance <small>Two hospitals</small></h4>
+              <p>Two hospitals wanted to build a model together without handing over patient records. I proposed federated learning, but first checked that their data was even compatible. Then I named the risks that remain, like model updates leaking information or a compromised partner poisoning the model, and outlined a signed data agreement.</p>
+            </li>
+            <li>
+              <h4>Translate for my audience</h4>
+              <p>For the portfolio, I mapped each scenario onto a sports problem and turned the lessons into a printable checklist.</p>
+            </li>
+          </ol>
+        </section>
+
+        <section id="takeaways">
+          <div class="sec-label">Key takeaways</div>
+          <h2>What I learned.</h2>
+          <ul>
+            <li><strong>Remove duplicates before you split the data.</strong> At first I thought duplicates were just messy for analysts. After a follow-up question, I realized the real problem: if the same record lands in both training and test data, the model is tested on answers it already memorized and "the scores look fake good."</li>
+            <li><strong>Labels need checking too.</strong> Star ratings aren't always honest sentiment. Sarcasm alone can flip a label.</li>
+            <li><strong>Overall accuracy can hide who the model fails.</strong> Results need to be checked group by group.</li>
+            <li><strong>Feedback loops are sneaky.</strong> If a model treats a group poorly, those people leave, they disappear from future data, and the decline looks like a natural trend instead of the model's fault.</li>
+            <li><strong>Privacy tools aren't magic.</strong> Federated learning changes what data moves between organizations, not what can still leak.</li>
+            <li><strong>Where I'm still growing:</strong> differential privacy. I recognized that information can leak, but I haven't yet worked out how stronger privacy settings can hurt accuracy for small groups and rare cases.</li>
+          </ul>
+        </section>
+
+        <section id="evidence">
+          <div class="sec-label">Evidence</div>
+          <h2>Exercise performance summary.</h2>
+          <p>Generated by the AI coach at the end of the session, based on my actual answers. I used the nickname "Jarvis" in the session.</p>
+          <blockquote class="summary-quote">
+            <p><strong>Scenario 1: Data Quality and Cleaning.</strong> Jarvis proposed cleaning and standardizing the dataset into a team-wide schema before training, with deduplication and removal of incomplete records. The strongest moment was reasoning through <em>where</em> deduplication must happen: before the train/test split, so the model isn't evaluated on data it effectively memorized — "the scores look fake good," as Jarvis put it. Jarvis also proposed hand-checking a sample of star-rating-derived labels to estimate error rates from things like sarcasm, and designed multi-signal spam detection (identical text across accounts, burst posting, links) while naming both failure directions: spam teaching fake patterns vs. over-filtering excluding non-typical writers.</p>
+            <p><strong>Scenario 2: Bias, Distribution Shift, and Responsible Scaling.</strong> Jarvis identified that strong original-test performance only proves the model works on a similar crowd, proposed subgroup-level accuracy evaluation, ongoing hand-checking of fresh samples, and a pre-launch pilot on real data from the new population. The standout insight was the feedback loop: a model that misclassifies a group drives those users away, shrinking their representation in future training data — a decline the team might misread as natural distribution shift.</p>
+            <p><strong>Scenario 3: Privacy, Security, and Governance.</strong> Jarvis proposed federated learning to keep patient data local, but — importantly — checked dataset compatibility first (harmonizing coding and labels across hospitals). Jarvis recognized residual risks unprompted after probing: model updates and the final model can leak patient information, and a compromised participant can poison the shared model, leading to secure aggregation and update validation. For governance, Jarvis proposed a signed agreement covering permitted uses, data deletion timelines, breach responsibility, and a joint review board for secondary uses.</p>
+            <p><strong>Performance highlights:</strong> Jarvis consistently identified tradeoffs in both directions (filter strictness, privacy–utility costs) and independently distinguished evaluation validity from training quality — a maturity beyond just naming techniques.</p>
+            <p><strong>Overall takeaway:</strong> Jarvis demonstrated that data quality, representation, and responsible scaling are inseparable from privacy and governance — trustworthy ML is layered defense plus evidence, not one clever technique.</p>
+            <footer><span class="badge">AI-generated</span> Practice summary, not an instructor grade</footer>
+          </blockquote>
+          <div class="btn-row">
+            <a class="btn btn-outline" href="https://student.schoolai.com/dot/spaces/5086d09a-9898-401d-bccc-f24eb95c1f21/chats/2c7180e4-ae51-4bfe-b406-fe556448d5ff" target="_blank" rel="noopener">Original chat on SchoolAI</a>
+          </div>
+          <p class="note" style="margin-top:14px">The SchoolAI link may require a SchoolAI login. The summary above is excerpted from the session; the full version also lists an area to keep developing and a next step, both covered under Key takeaways.</p>
+        </section>
+
+        <section id="sports">
+          <div class="sec-label">In sports</div>
+          <h2>The same problems, on the field.</h2>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Exercise scenario</th><th>Sports version</th><th>What to do</th></tr></thead>
+              <tbody>
+                <tr><td>Duplicate and mislabeled reviews</td><td>The same match logged in two tracking systems; coaches tagging "good saves" differently</td><td>Remove duplicates before splitting data, and spot-check tags by hand</td></tr>
+                <tr><td>Hiring model trained on one company's past</td><td>A scouting model trained on past D1 recruits, now used for NAIA, youth, or international players</td><td>Check accuracy by group and pilot with local data before trusting it</td></tr>
+                <tr><td>Feedback loop pushing users away</td><td>Players the model overlooks never get chances, so they never show up as success stories</td><td>Keep human review, and audit who the model passes over</td></tr>
+                <tr><td>Two hospitals sharing patient data</td><td>Clubs or academies pooling injury and wellness data, often for minors</td><td>Check data compatibility, share only what's needed, and sign a data agreement</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>These are my applied examples, not tested models.</p>
+        </section>
+
+        <section id="checklist">
+          <div class="sec-label">The checklist</div>
+          <h2>Three questions before you trust sports data.</h2>
+          <div class="fit-grid three">
+            <div class="fit good">
+              <h3>1. Clean</h3>
+              <p class="fit-sub">Is the data accurate?</p>
+              <ul>
+                <li><b>Keep a raw copy</b> and log every change.</li>
+                <li><b>Dedupe before splitting</b> training and test data.</li>
+                <li><b>Spot-check labels</b> by hand.</li>
+                <li><b>Keep unusual data</b> that's still valid.</li>
+              </ul>
+            </div>
+            <div class="fit fair">
+              <h3>2. Fair</h3>
+              <p class="fit-sub">Does it work for everyone?</p>
+              <ul>
+                <li><b>Question your labels.</b> Past picks aren't proof.</li>
+                <li><b>Check results by group,</b> not just overall.</li>
+                <li><b>Pilot in the new setting</b> first.</li>
+                <li><b>Watch for feedback loops.</b></li>
+              </ul>
+            </div>
+            <div class="fit danger">
+              <h3>3. Protected</h3>
+              <p class="fit-sub">Is athlete data safe?</p>
+              <ul>
+                <li><b>Collect only what you need.</b></li>
+                <li><b>Check compatibility</b> before sharing.</li>
+                <li><b>"No names" isn't always anonymous.</b></li>
+                <li><b>Put it in writing:</b> use, retention, responsibility.</li>
+              </ul>
+            </div>
+          </div>
+          <p class="callout">Rule of thumb: trustworthy AI isn't one clever technique. It's clean data, fair testing, layered protection, and checking again after launch.</p>
+
+          <div class="download-card">
+            <a href="Sports-Data-Checklist.pdf" target="_blank" rel="noopener"><img src="checklist-preview.jpg" alt="Preview of the one-page sports data checklist"></a>
+            <div>
+              <span class="eyebrow">Free download</span>
+              <h3>Is your data ready for AI? One-page checklist</h3>
+              <p>All 12 checks with sports examples, on one printable page. Built for club directors, academy staff, and anyone buying an AI scouting or performance tool.</p>
+              <div class="btn-row">
+                <a class="btn btn-dark" href="Sports-Data-Checklist.pdf" download>Download PDF</a>
+                <a class="btn btn-outline" href="Sports-Data-Checklist.pdf" target="_blank" rel="noopener">Open in new tab</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="tools">
+          <div class="sec-label">Tools and technologies used</div>
+          <h2>What I used, and why.</h2>
+          <ul class="tool-list">
+            <li><b>SchoolAI</b><span>Ran the "Data Challenge Scenarios Coach" from a structured course prompt.</span></li>
+            <li><b>Data concepts</b><span>Deduplication, train/test splits, label auditing, subgroup evaluation, and distribution shift.</span></li>
+            <li><b>Privacy concepts</b><span>Federated learning, secure aggregation, data minimization, and governance agreements.</span></li>
+            <li><b>Claude (Anthropic)</b><span>Help designing the checklist and this page. The exercise answers are my own.</span></li>
+          </ul>
+        </section>
+
+        <section id="value-proposition">
+          <div class="sec-label">Value proposition</div>
+          <h2>Why this matters.</h2>
+          <p class="callout">This artifact shows I can find the data problems that quietly break AI systems, and it gives sports organizations a checklist to catch them before they trust a model with real players.</p>
+          <div class="value-grid">
+            <div class="card">
+              <h3>Unique value</h3>
+              <p>I've lived the sports side of these problems as a player who's been recruited, a coach who's evaluated keepers, and a business owner who handles families' information. That let me translate hospital and hiring cases into scouting and athlete-data problems that sports people recognize. It shows four skills: data cleaning, bias and fairness evaluation, privacy and governance thinking, and spotting trade-offs on both sides.</p>
+            </div>
+            <div class="card">
+              <h3>Relevance</h3>
+              <p>Clubs and academies are adopting scouting tools, tracking systems, and wellness apps, often with minors' data. A bad dataset can produce unfair recruiting decisions or expose athletes' information. For employers, it shows I understand that most real AI work is data work.</p>
+            </div>
+          </div>
+          <p style="margin-top:20px"><strong>How it connects to my value proposition:</strong> my promise is simple, <em>tested</em>, responsible AI. This artifact is about what "tested" really means: clean data, fair checks across groups, and protection built in before launch, not after.</p>
+        </section>
+
+        <section id="references">
+          <div class="sec-label">References</div>
+          <h2>Sources.</h2>
+          <ul class="refs">
+            <li>Dwork, C., &amp; Roth, A. (2014). The algorithmic foundations of differential privacy. <em>Foundations and Trends in Theoretical Computer Science, 9</em>(3&ndash;4), 211&ndash;407. <a href="https://doi.org/10.1561/0400000042" target="_blank" rel="noopener">https://doi.org/10.1561/0400000042</a></li>
+            <li>Indiana Wesleyan University. (2026). <em>Data Challenge Scenarios Coach</em> [AI coaching prompt]. AIML-500 Machine Learning Fundamentals.</li>
+            <li>McMahan, H. B., Moore, E., Ramage, D., Hampson, S., &amp; Ag&uuml;era y Arcas, B. (2017). Communication-efficient learning of deep networks from decentralized data. <em>Proceedings of the 20th International Conference on Artificial Intelligence and Statistics</em>, 1273&ndash;1282. <a href="https://arxiv.org/abs/1602.05629" target="_blank" rel="noopener">https://arxiv.org/abs/1602.05629</a></li>
+            <li>SchoolAI. (n.d.). <em>SchoolAI</em> [AI learning platform]. <a href="https://schoolai.com" target="_blank" rel="noopener">https://schoolai.com</a></li>
+          </ul>
+
+          <nav class="pager">
+            <a href="ai-trust.html"><span>&larr; Previous</span>Artifact 03: When to Trust AI</a>
+            <a href="index.html#artifacts"><span>All work</span>Back to artifacts &rarr;</a>
+          </nav>
+        </section>
+
+      </article>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>&copy; <span data-year>2026</span> Ralph Montero</span>
+    <span><a href="https://www.linkedin.com/in/ralph-montero-095a15254/" target="_blank" rel="noopener">LinkedIn</a> &middot; <a href="index.html#artifacts">All artifacts</a></span>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

@@ -395,3 +395,10 @@ tr:last-child td { border-bottom: 0; }
 .fv-tag.danger { background: rgba(244,114,94,.16); color: #ffa898; border: 1px solid rgba(244,114,94,.45); }
 @media (max-width: 960px) { .check-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 720px) { .fit-grid, .check-grid { grid-template-columns: 1fr; } .fit-visual { padding: 24px; } }
+
+/* v5: artifact 4 */
+.fit-grid.three { grid-template-columns: repeat(3, 1fr); }
+.fit.fair { background: #eef3fe; border: 1px solid #c7d7fb; }
+.fit.fair h3 { color: #1d4ed8; }
+.fv-tag.fair { background: rgba(96,145,255,.16); color: #a9c1ff; border: 1px solid rgba(96,145,255,.45); }
+@media (max-width: 960px) { .fit-grid.three { grid-template-columns: 1fr; } }
